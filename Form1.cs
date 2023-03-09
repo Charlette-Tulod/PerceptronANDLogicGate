@@ -40,13 +40,14 @@ namespace PerceptronApp
 
         private void btnTrain_Click(object sender, EventArgs e)
         {
-            // Get the input values from the text boxes
+            // OR Logic gate different inputs
             double[] inputs1 = new double[] { 0, 0 };
             double[] inputs2 = new double[] { 0, 1 };
             double[] inputs3 = new double[] { 1, 0 };
             double[] inputs4 = new double[] { 1, 1 };
 
-            double[] outputs = new double[] { 0, 0, 0, 1 };
+            // Outputs
+            double[] outputs = new double[] { 0, 1, 1, 1 };
 
             // Get the learning rate and number of iterations from the text boxes
             double learningRate = Convert.ToDouble(txtLearningRate.Text);

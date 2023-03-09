@@ -48,7 +48,6 @@ namespace PerceptronApp
             this.reset1 = new System.Windows.Forms.Button();
             this.reset2 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -102,9 +101,9 @@ namespace PerceptronApp
             this.label2.Font = new System.Drawing.Font("Bahnschrift SemiLight Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(346, 102);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(103, 23);
+            this.label2.Size = new System.Drawing.Size(97, 23);
             this.label2.TabIndex = 5;
-            this.label2.Text = "AND Logic Gate";
+            this.label2.Text = "OR Logic Gate";
             // 
             // label3
             // 
@@ -140,7 +139,7 @@ namespace PerceptronApp
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(134, 292);
+            this.label6.Location = new System.Drawing.Point(91, 252);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(94, 16);
             this.label6.TabIndex = 9;
@@ -150,29 +149,29 @@ namespace PerceptronApp
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(134, 349);
+            this.label7.Location = new System.Drawing.Point(91, 309);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(64, 16);
+            this.label7.Size = new System.Drawing.Size(56, 16);
             this.label7.TabIndex = 10;
-            this.label7.Text = "Iterations:";
+            this.label7.Text = "Epochs:";
             // 
             // txtLearningRate
             // 
-            this.txtLearningRate.Location = new System.Drawing.Point(234, 289);
+            this.txtLearningRate.Location = new System.Drawing.Point(191, 249);
             this.txtLearningRate.Name = "txtLearningRate";
             this.txtLearningRate.Size = new System.Drawing.Size(100, 20);
             this.txtLearningRate.TabIndex = 11;
             // 
             // txtNumIterations
             // 
-            this.txtNumIterations.Location = new System.Drawing.Point(234, 348);
+            this.txtNumIterations.Location = new System.Drawing.Point(191, 308);
             this.txtNumIterations.Name = "txtNumIterations";
             this.txtNumIterations.Size = new System.Drawing.Size(100, 20);
             this.txtNumIterations.TabIndex = 12;
             // 
             // btnTrain
             // 
-            this.btnTrain.Location = new System.Drawing.Point(137, 398);
+            this.btnTrain.Location = new System.Drawing.Point(94, 358);
             this.btnTrain.Name = "btnTrain";
             this.btnTrain.Size = new System.Drawing.Size(75, 23);
             this.btnTrain.TabIndex = 13;
@@ -184,7 +183,7 @@ namespace PerceptronApp
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(143, 442);
+            this.label8.Location = new System.Drawing.Point(91, 404);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(0, 15);
             this.label8.TabIndex = 14;
@@ -192,7 +191,7 @@ namespace PerceptronApp
             // reset1
             // 
             this.reset1.ForeColor = System.Drawing.Color.Red;
-            this.reset1.Location = new System.Drawing.Point(259, 398);
+            this.reset1.Location = new System.Drawing.Point(216, 358);
             this.reset1.Name = "reset1";
             this.reset1.Size = new System.Drawing.Size(75, 23);
             this.reset1.TabIndex = 15;
@@ -217,23 +216,14 @@ namespace PerceptronApp
             this.label9.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(84, 165);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(175, 19);
+            this.label9.Size = new System.Drawing.Size(45, 19);
             this.label9.TabIndex = 17;
-            this.label9.Text = "Training the Perceptron";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(85, 210);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(198, 13);
-            this.label10.TabIndex = 18;
-            this.label10.Text = "Default values are with closest accuracy";
+            this.label9.Text = "Train";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(85, 239);
+            this.label11.Location = new System.Drawing.Point(85, 208);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(329, 13);
             this.label11.TabIndex = 19;
@@ -263,11 +253,10 @@ namespace PerceptronApp
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FloralWhite;
-            this.ClientSize = new System.Drawing.Size(841, 526);
+            this.ClientSize = new System.Drawing.Size(821, 520);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.reset2);
             this.Controls.Add(this.reset1);
@@ -287,7 +276,7 @@ namespace PerceptronApp
             this.Controls.Add(this.txtInput2);
             this.Controls.Add(this.txtInput1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Perceptron OR Logic Gate";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -313,7 +302,6 @@ namespace PerceptronApp
         private System.Windows.Forms.Button reset1;
         private System.Windows.Forms.Button reset2;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
